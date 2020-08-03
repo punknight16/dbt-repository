@@ -1,7 +1,6 @@
 select
-    id as order_id,
-    user_id as customer_id,
-    order_date,
-    status
-
-from `dbt-tutorial`.jaffle_shop.orders
+    O_ORDERKEY AS O_ORDERKEY,
+    O_CUSTKEY AS O_CUSTKEY,
+    O_ORDERSTATUS AS O_ORDERSTATUS,
+    O_ORDERDATE AS O_ORDERDATE
+from SNOWFLAKE_SAMPLE_DATA.TPCH_SF10.ORDERS LIMIT 100

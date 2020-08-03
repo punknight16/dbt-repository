@@ -1,6 +1,6 @@
 select
-    id as customer_id,
-    first_name,
-    last_name
-
-from `dbt-tutorial`.jaffle_shop.customers
+    C_CUSTKEY AS C_CUSTKEY,
+    C_NAME AS C_NAME,
+    C_ACCTBAL AS C_ACCTBAL,
+    C_MKTSEGMENT AS C_MKTSEGMENT
+from SNOWFLAKE_SAMPLE_DATA.TPCH_SF10.CUSTOMER LIMIT 100
